@@ -106,7 +106,7 @@ kubectl set env deployment/grafana -n monitoring GF_INSTALL_PLUGINS-
 **Solution:**
 Fix directory permissions:
 ```bash
-ansible-playbook -i inventory/hosts.yml playbooks/fix-loki-config.yaml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/fix-loki-config.yaml
 ```
 
 ### Node Exporter Issues

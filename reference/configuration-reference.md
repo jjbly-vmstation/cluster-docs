@@ -4,7 +4,7 @@ Configuration options for VMStation components.
 
 ## Inventory Configuration
 
-### hosts.yml
+### /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml
 
 ```yaml
 all:

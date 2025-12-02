@@ -10,7 +10,7 @@ This guide covers deploying the Debian-based Kubernetes cluster using kubeadm. F
 
 - Debian 12 nodes configured
 - SSH access to all nodes
-- Inventory configured in `ansible/inventory/hosts.yml`
+- Inventory configured in /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml`
 
 See [Prerequisites](../getting-started/prerequisites.md) for full requirements.
 
@@ -110,7 +110,7 @@ kubectl get pods -n kube-system
 
 ### Kubernetes Version
 
-Edit `ansible/inventory/hosts.yml`:
+Edit /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml`:
 
 ```yaml
 all:

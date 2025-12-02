@@ -81,7 +81,7 @@ vmstation-org/
 │   │   ├── common/
 │   │   └── storage/
 │   └── inventory/
-│       └── hosts.ini
+│       └── /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml
 │
 ├── cluster-setup/                   # Initial setup and bootstrap
 │   ├── bootstrap/                  # Initial node preparation

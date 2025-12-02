@@ -6,7 +6,7 @@ Deploy the VMStation Kubernetes cluster using simplified modular deployment comm
 
 - Ansible installed on your control machine
 - SSH access to all target nodes
-- Inventory configured in `ansible/inventory/hosts.yml`
+- Inventory configured in /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml`
 
 ## Recommended Deployment (Kubespray)
 

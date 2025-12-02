@@ -18,7 +18,7 @@ Development documentation for VMStation.
 VMStation/
 ├── deploy.sh                    # Main deployment script
 ├── ansible/
-│   ├── inventory/hosts.yml      # Cluster inventory
+│   ├── /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml      # Cluster inventory
 │   ├── playbooks/               # Ansible playbooks
 │   └── roles/                   # Ansible roles
 ├── scripts/

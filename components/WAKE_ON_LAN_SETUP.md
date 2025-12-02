@@ -138,7 +138,7 @@ nmcli connection up "Wired connection 1"
 ### Setup Wake-on-LAN on All Nodes
 
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   power-management/playbooks/setup-wake-on-lan.yml
 ```
 
@@ -225,7 +225,7 @@ worker-03|192.168.1.13|AA:BB:CC:DD:EE:F3|eth0
 The registry is automatically generated when running the WoL setup playbook:
 
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   power-management/playbooks/setup-wake-on-lan.yml
 ```
 

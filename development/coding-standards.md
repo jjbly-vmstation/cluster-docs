@@ -251,7 +251,7 @@ Fixes #123
 ```
 ansible/
 ├── inventory/
-│   └── hosts.yml
+│   └── /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml
 ├── playbooks/
 │   └── deploy-cluster.yaml
 └── roles/

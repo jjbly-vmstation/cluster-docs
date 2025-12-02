@@ -310,7 +310,7 @@ journalctl -u vmstation-autosleep.service -b
 ### Deploy Configuration
 
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   ansible/playbooks/setup-autosleep.yml \
   -e autosleep_timeout_minutes=180 \
   -e autosleep_check_interval_minutes=10
@@ -319,7 +319,7 @@ ansible-playbook -i ansible/inventory/hosts.yml \
 ### Update Configuration
 
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   ansible/playbooks/setup-autosleep.yml \
   --tags=config
 ```

@@ -70,30 +70,30 @@ See [KERBEROS_SETUP.md](KERBEROS_SETUP.md) for detailed configuration.
 
 ```bash
 cd ansible
-ansible-playbook -i inventory/production/hosts.yml playbooks/site.yml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/site.yml
 ```
 
 ### Individual Service Deployment
 
 ```bash
 # NTP only
-ansible-playbook -i inventory/production/hosts.yml playbooks/ntp-sync.yml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/ntp-sync.yml
 
 # Syslog only
-ansible-playbook -i inventory/production/hosts.yml playbooks/syslog-server.yml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/syslog-server.yml
 
 # Security hardening only
-ansible-playbook -i inventory/production/hosts.yml playbooks/baseline-hardening.yml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/baseline-hardening.yml
 ```
 
 ### Using Tags
 
 ```bash
 # Deploy only NTP and security
-ansible-playbook -i inventory/production/hosts.yml playbooks/site.yml --tags ntp,security
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/site.yml --tags ntp,security
 
 # Skip Kerberos
-ansible-playbook -i inventory/production/hosts.yml playbooks/site.yml --skip-tags kerberos
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/site.yml --skip-tags kerberos
 ```
 
 ## Verification

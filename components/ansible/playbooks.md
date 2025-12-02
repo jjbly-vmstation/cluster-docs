@@ -24,7 +24,7 @@ Deploys the Debian Kubernetes cluster.
 
 **Usage:**
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml ansible/playbooks/deploy-cluster.yaml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml ansible/playbooks/deploy-cluster.yaml
 ```
 
 ### run-preflight-rhel10.yml
@@ -43,7 +43,7 @@ Prepares RHEL10 nodes for Kubernetes.
 
 **Usage:**
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml ansible/playbooks/run-preflight-rhel10.yml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml ansible/playbooks/run-preflight-rhel10.yml
 ```
 
 ### deploy-monitoring.yaml
@@ -60,7 +60,7 @@ Deploys the monitoring stack.
 
 **Usage:**
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml ansible/playbooks/deploy-monitoring.yaml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml ansible/playbooks/deploy-monitoring.yaml
 ```
 
 ### deploy-infrastructure-services.yaml
@@ -74,7 +74,7 @@ Deploys infrastructure services.
 
 **Usage:**
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml ansible/playbooks/deploy-infrastructure-services.yaml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml ansible/playbooks/deploy-infrastructure-services.yaml
 ```
 
 ### install-rke2-homelab.yml
@@ -91,7 +91,7 @@ Installs RKE2 on homelab node.
 
 **Usage:**
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml ansible/playbooks/install-rke2-homelab.yml --ask-vault-pass
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml ansible/playbooks/install-rke2-homelab.yml --ask-vault-pass
 ```
 
 ### reset-cluster.yaml
@@ -107,7 +107,7 @@ Resets the cluster to clean state.
 
 **Usage:**
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml ansible/playbooks/reset-cluster.yaml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml ansible/playbooks/reset-cluster.yaml
 ```
 
 ## Playbook Variables
@@ -145,19 +145,19 @@ ansible_ssh_private_key_file: /root/.ssh/id_k3s
 
 ```bash
 cd ansible
-ansible-playbook -i inventory/hosts.yml playbooks/<playbook>.yaml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/<playbook>.yaml
 ```
 
 ### Check Mode (Dry Run)
 
 ```bash
-ansible-playbook -i inventory/hosts.yml playbooks/<playbook>.yaml --check
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/<playbook>.yaml --check
 ```
 
 ### Verbose Output
 
 ```bash
-ansible-playbook -i inventory/hosts.yml playbooks/<playbook>.yaml -v
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/<playbook>.yaml -v
 ```
 
 ## Related Documentation

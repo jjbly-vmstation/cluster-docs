@@ -14,7 +14,7 @@ Kubespray is an Ansible-based Kubernetes deployment tool offering:
 
 ```bash
 # Prepare RHEL10 node
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   ansible/playbooks/run-preflight-rhel10.yml
 
 # Stage Kubespray
@@ -31,7 +31,7 @@ ansible-playbook -i inventory/mycluster/inventory.ini cluster.yml
 Run preflight on RHEL10 nodes:
 
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   ansible/playbooks/run-preflight-rhel10.yml
 ```
 
@@ -165,7 +165,7 @@ ansible-playbook -i inventory/mycluster/inventory.ini reset.yml -b
 cat ansible/artifacts/run-preflight-rhel10.log
 
 # Re-run preflight
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   ansible/playbooks/run-preflight-rhel10.yml -v
 ```
 

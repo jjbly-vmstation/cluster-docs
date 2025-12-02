@@ -21,7 +21,7 @@ This file tracks the prioritized migration and improvement actions for the VMSta
   - cluster-docs/reference/INVENTORY_MANAGEMENT.md
 
 ### 3. Create unified inventory in cluster-infra
-- Establish cluster-infra/inventory/production/hosts.yml as the single source of truth for inventory. Remove duplicates and update all playbooks to reference this inventory.
+- Establish /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml as the single source of truth for inventory. Remove duplicates and update all playbooks to reference this inventory.
 **Guiding Documents:**
   - MIGRATION_ANALYSIS.md
   - cluster-docs/reference/INVENTORY_MANAGEMENT.md

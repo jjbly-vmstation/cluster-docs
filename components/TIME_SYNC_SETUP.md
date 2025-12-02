@@ -75,19 +75,19 @@ logdir /var/log/chrony
 
 ```bash
 cd ansible
-ansible-playbook -i inventory/production/hosts.yml playbooks/ntp-sync.yml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/ntp-sync.yml
 ```
 
 ### Deploy to Specific Host
 
 ```bash
-ansible-playbook -i inventory/production/hosts.yml playbooks/ntp-sync.yml --limit masternode
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/ntp-sync.yml --limit masternode
 ```
 
 ### Check Mode (Dry Run)
 
 ```bash
-ansible-playbook -i inventory/production/hosts.yml playbooks/ntp-sync.yml --check --diff
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/ntp-sync.yml --check --diff
 ```
 
 ## Verification

@@ -63,7 +63,7 @@ swapoff -a
 
 ### Step 2: Add to Inventory
 
-Edit `ansible/inventory/hosts.yml`:
+Edit /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml`:
 
 ```yaml
 storage_nodes:
@@ -114,7 +114,7 @@ rm -rf /etc/cni/net.d /var/lib/kubelet /etc/kubernetes
 
 ### Step 4: Update Inventory
 
-Remove node from `ansible/inventory/hosts.yml`.
+Remove node from /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml`.
 
 ## Resource Scaling
 

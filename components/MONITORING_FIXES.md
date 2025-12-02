@@ -92,7 +92,7 @@ Incorrect ownership on hostPath directories.
 ### Solution
 Run the Loki fix playbook:
 ```bash
-ansible-playbook -i inventory/hosts.yml playbooks/fix-loki-config.yaml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/fix-loki-config.yaml
 ```
 
 Or manually fix permissions:

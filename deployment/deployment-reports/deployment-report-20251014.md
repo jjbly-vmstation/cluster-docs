@@ -120,7 +120,7 @@ kubectl get pvc -n monitoring
 
 ## Files Modified
 
-- `ansible/inventory/hosts.yml` - SSH key paths fixed
+- /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml` - SSH key paths fixed
 
 ## Lessons Learned
 

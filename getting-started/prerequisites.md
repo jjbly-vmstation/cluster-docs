@@ -94,7 +94,7 @@ ssh -i ~/.ssh/id_k3s root@192.168.4.62 hostname
 
 ## Inventory Configuration
 
-Edit `ansible/inventory/hosts.yml`:
+Edit /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml`:
 
 ```yaml
 all:

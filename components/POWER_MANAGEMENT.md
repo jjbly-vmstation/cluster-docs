@@ -205,15 +205,15 @@ The spin-down playbook performs:
 
 ```bash
 # Full cluster shutdown
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   power-management/playbooks/spin-down-cluster.yml
 
 # Dry run
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   power-management/playbooks/spin-down-cluster.yml --check
 
 # Skip master shutdown
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   power-management/playbooks/spin-down-cluster.yml \
   -e shutdown_control_plane=false
 ```

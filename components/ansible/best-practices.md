@@ -7,7 +7,7 @@ Guidelines for working with Ansible in VMStation.
 ### Use YAML Format
 
 ```yaml
-# ansible/inventory/hosts.yml
+# /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml
 all:
   vars:
     kubernetes_version: "1.29"

@@ -407,7 +407,7 @@ kubectl get pods -A
 cd ~/vmstation-org/cluster-config
 
 # Review inventory
-cat inventory/hosts.ini
+cat /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml
 
 # Expected:
 # [all]
@@ -880,7 +880,7 @@ fatal: [homelab]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect"}
 ssh homelab 'hostname'
 
 # Test Ansible connectivity
-ansible all -m ping -i inventory/hosts.ini
+ansible all -m ping -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml
 ```
 
 **Solution**:

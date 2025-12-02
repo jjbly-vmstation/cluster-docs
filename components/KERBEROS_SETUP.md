@@ -103,7 +103,7 @@ kerberos_admin_server: masternode
 
 ```bash
 cd ansible
-ansible-playbook -i inventory/production/hosts.yml playbooks/kerberos-setup.yml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/kerberos-setup.yml
 ```
 
 ### Step 3: Initialize KDC (Manual on Server)

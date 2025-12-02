@@ -70,19 +70,19 @@ Clients forward logs to the central server.
 
 ```bash
 cd ansible
-ansible-playbook -i inventory/production/hosts.yml playbooks/syslog-server.yml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/syslog-server.yml
 ```
 
 ### Deploy Server Only
 
 ```bash
-ansible-playbook -i inventory/production/hosts.yml playbooks/syslog-server.yml --limit masternode
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/syslog-server.yml --limit masternode
 ```
 
 ### Deploy Clients Only
 
 ```bash
-ansible-playbook -i inventory/production/hosts.yml playbooks/syslog-server.yml --limit '!masternode'
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/syslog-server.yml --limit '!masternode'
 ```
 
 ## Variables

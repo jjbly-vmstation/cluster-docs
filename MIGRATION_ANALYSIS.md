@@ -250,7 +250,7 @@ cluster-infra/
 
 **Solution:**
 ```
-cluster-infra/inventory/production/hosts.yml  # Source of truth
+/srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml  # Source of truth
 └── Symlinked or imported by:
     ├── cluster-setup/ansible/inventory/
     ├── cluster-config/ansible/inventory/

@@ -62,7 +62,7 @@ preflight_sysctl_settings:
 Or:
 
 ```bash
-ansible-playbook -i inventory/hosts.yml playbooks/run-preflight-rhel10.yml
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml playbooks/run-preflight-rhel10.yml
 ```
 
 ## Role Structure

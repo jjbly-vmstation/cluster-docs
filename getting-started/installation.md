@@ -26,7 +26,7 @@ VMStation supports multiple deployment paths:
 Run preflight checks on RHEL10 nodes:
 
 ```bash
-ansible-playbook -i ansible/inventory/hosts.yml \
+ansible-playbook -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml \
   ansible/playbooks/run-preflight-rhel10.yml
 ```
 

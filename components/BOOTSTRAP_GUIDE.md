@@ -98,7 +98,7 @@ The `setup-ssh-keys.sh` script configures SSH key-based authentication.
 ```bash
 SSH_KEY_PATH=~/.ssh/vmstation_cluster
 SSH_KEY_TYPE=ed25519
-INVENTORY_FILE=ansible/inventory/hosts.yml
+/srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml
 ```
 
 ### 3. Prepare Nodes
@@ -148,7 +148,7 @@ The `verify-prerequisites.sh` script validates the setup.
 
 ## Inventory Configuration
 
-Edit `ansible/inventory/hosts.yml` to define your cluster:
+Edit /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml` to define your cluster:
 
 ```yaml
 all:
@@ -196,7 +196,7 @@ which apt-get dnf yum
 
 ```bash
 # Test Ansible ping
-ansible -i ansible/inventory/hosts.yml all -m ping
+ansible -i /srv/vmstation-org/cluster-setup/ansible/inventory/hosts.yml all -m ping
 
 # Check Ansible configuration
 ansible-config dump
