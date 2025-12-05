@@ -2,10 +2,8 @@
 	"folders": [
 		{
 			"path": "../.."
-		},
-		{
-			"path": "../../../VMStation"
 		}
 	],
-	"settings": {}
+	"settings": {
+	}
 }
