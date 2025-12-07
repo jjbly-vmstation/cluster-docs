@@ -64,7 +64,6 @@ The legacy monorepo contains a comprehensive **deploy.sh** orchestrator (33KB, 1
 **Legacy Monorepo Contains:**
 - Kubespray integration scripts (`scripts/run-kubespray.sh`, `ops-kubespray-automation.sh`)
 - Comprehensive Ansible playbooks for Debian and RHEL10 deployment
-- RKE2 deployment automation (deprecated but functional)
 - Terraform modules (present but basic)
 
 **Current State in cluster-infra:**
