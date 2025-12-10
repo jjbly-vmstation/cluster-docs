@@ -43,6 +43,8 @@ VMStation supports multiple deployment paths:
 - [Application Deployment](application-deployment.md) - Workloads
 - [Infrastructure Services](infrastructure-services.md) - Core services
 
+- [Identity Stack Fixes (2025-12-10)](identity-fixes-20251210.md) - Notes and operational guidance for recent identity playbook fixes
+
 ## Deployment Reports
 
 Historical deployment reports:
