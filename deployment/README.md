@@ -44,6 +44,7 @@ VMStation supports multiple deployment paths:
 - [Infrastructure Services](infrastructure-services.md) - Core services
 
 - [Identity Stack Fixes (2025-12-10)](identity-fixes-20251210.md) - Notes and operational guidance for recent identity playbook fixes
+- [Diff-Patches: 20251210T175647Z](diff-patches-20251210T175647Z.md) - Patch index, scripts, manifests and automation for identity stack improvements
 
 ## Deployment Reports
 
