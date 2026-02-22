@@ -183,6 +183,7 @@ vmstation-org/
 ├── cluster-setup/                   ← Bootstrap & setup
 ├── cluster-monitor-stack/           ← Monitoring & observability
 ├── cluster-application-stack/       ← Application deployments
+├── cluster-vm-thinclient/           ← Windows VM thin-client (homelab)
 └── cluster-tools/                   ← Operational utilities
 ```
 
@@ -212,6 +213,7 @@ Each component repository has:
 | cluster-setup | Bootstrap scripts, power management | cluster-docs/components/cluster-setup/ |
 | cluster-monitor-stack | Monitoring manifests, dashboards | cluster-docs/components/cluster-monitor-stack/ |
 | cluster-application-stack | Application manifests, Helm charts | cluster-docs/components/cluster-application-stack/ |
+| cluster-vm-thinclient | Windows VM thin-client (Terraform + Ansible) | cluster-vm-thinclient/DEPLOYMENT_RUNBOOK.md |
 | cluster-tools | Validation scripts, diagnostic tools | cluster-docs/components/cluster-tools/ |
 
 ---

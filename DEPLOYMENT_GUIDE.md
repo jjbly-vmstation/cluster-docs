@@ -940,6 +940,43 @@ ansible-playbook playbooks/deploy-monitoring-stack.yaml
 
 ## Post-Deployment Tasks
 
+### Windows Thin Client (Optional)
+
+For persistent, licensed Windows VM on homelab (RHEL) used as thin client from MacBook Air:
+
+| Repository | Purpose |
+|------------|---------|
+| cluster-vm-thinclient | Windows VM setup, backups, Mac thin-client config |
+
+**Quick reference** (run Ansible from masternode; SSH into homelab as jashandeepjustinbains):
+
+```bash
+# 1. Create VM user and dirs on homelab
+cd ~/vmstation-org/cluster-vm-thinclient/ansible
+ansible-playbook -i inventory/hosts.yml playbooks/01-vm-user-setup.yml
+
+# 2. Download Windows ISO (or copy to ~/iso manually)
+ansible-playbook -i inventory/hosts.yml playbooks/02-download-windows-iso.yml \
+  -e "windows_iso_url=https://example.com/Win11.iso"
+
+# 3. Provision VM
+cd ../terraform
+terraform init && terraform apply
+
+# 4. Install Windows (manual) + Activate + Configure RDP
+# 5. Run hardening
+ansible-playbook -i inventory/hosts.yml playbooks/04-windows-hardening.yml
+
+# 6. Backups
+ansible-playbook -i inventory/hosts.yml playbooks/03-backup-windows-vm.yml
+
+# 7. Mac thin-client: ./scripts/mac-thinclient/setup-mac-thinclient.sh
+```
+
+See [cluster-vm-thinclient/DEPLOYMENT_RUNBOOK.md](../cluster-vm-thinclient/DEPLOYMENT_RUNBOOK.md) for full procedure.
+
+---
+
 ### Configure Power Management
 
 ```bash
