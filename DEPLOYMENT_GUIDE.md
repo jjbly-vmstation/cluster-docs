@@ -3,6 +3,7 @@
 **Date**: November 30, 2025  
 **Version**: 1.0.0  
 **Purpose**: Step-by-step deployment guide for vmstation-org modular Kubernetes cluster
+Canonical Inventory File F:\vmstation-org\cluster-setup\ansible\inventory\hosts.yml
 
 ---
 
@@ -1079,3 +1080,8 @@ cd ~/vmstation-org/cluster-tools/tests/drift-detection
 **Deployment Guide Version**: 1.0.0  
 **Last Updated**: November 30, 2025  
 **Maintained By**: VMStation Infrastructure Team
+
+
+
+
+<!-- NOTE: Homelab loves cockpit ensure all RHEL nodes running cockpit -->
