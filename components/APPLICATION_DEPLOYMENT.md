@@ -192,6 +192,9 @@ kubectl get svc -A
 
 # Test service connectivity (from cluster)
 kubectl run test --rm -i --tty --image=busybox -- wget -qO- http://jellyfin-service.jellyfin:8096/health
+
+# Verify Jellyfin service endpoints
+kubectl get endpoints jellyfin-service -n jellyfin
 ```
 
 ### Verify Storage
@@ -205,6 +208,8 @@ kubectl get pv
 
 # Verify storage on node
 ssh storagenodet3500 'df -h /srv/media'
+
+# PV nodeAffinity is immutable; only recreate PV/PVC if the host path or node affinity must change
 ```
 
 ## Rollback Procedures
