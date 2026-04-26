@@ -98,7 +98,7 @@ Since you are dealing with a **Hybrid Cluster** (Windows + Linux), you can use K
 
 
 
-
+Migrate completely to kustomize runs
 
 
 PROMPT
